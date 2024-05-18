@@ -149,6 +149,13 @@ a:hover {
   font-size: 1.1rem;
 }
 
+/*--/ Title s /--*/
+.subtitle-s {
+  font-weight: 600;
+  color: #1e1e1e;
+  font-size: 1rem;
+}
+
 /*--/ Title A /--*/
 .title-box {
   margin-bottom: 4rem;
@@ -450,9 +457,9 @@ a:hover {
 # Header
 --------------------------------------------------------------*/
 #header {
-  transition: all 0.5s;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 12px 0;
   z-index: 997;
-  padding: 20px 0;
 }
 
 #header .logo {
@@ -469,11 +476,6 @@ a:hover {
 
 #header .logo img {
   max-height: 40px;
-}
-
-#header.header-scrolled {
-  background: rgba(0, 0, 0, 0.9);
-  padding: 12px 0;
 }
 
 /*--------------------------------------------------------------
@@ -593,6 +595,12 @@ a:hover {
   opacity: 1;
   top: 100%;
   visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
 }
 
 .navbar .dropdown .dropdown:hover>ul {
@@ -826,10 +834,6 @@ a:hover {
 
 .about-mf .about-img {
   margin-bottom: 2rem;
-}
-
-.about-mf .about-img img {
-  margin-left: 10px;
 }
 
 @media (min-width: 767px) {
